@@ -1,0 +1,72 @@
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.pdb
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojResolveAssemblyReference.cache
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.GenerateResource.Cache
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.ClientSearch.resources
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.dll
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.dll
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.pdb
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.pdb
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.exe
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.Properties.Resources.resources
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddClient.resources
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddVessel.resources
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmSearchClients.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.exe
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.dll
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.dll
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojResolveAssemblyReference.cache
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddClient.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddVessel.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmSearchClients.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.ClientSearch.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.Properties.Resources.resources
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.GenerateResource.Cache
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.exe
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.dll
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.dll
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojResolveAssemblyReference.cache
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddClient.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddVessel.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmSearchClients.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.ClientSearch.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.Properties.Resources.resources
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.GenerateResource.Cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.exe.config
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.exe
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.UI.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.BL.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\bin\Debug\MMSIS.DL.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddClient.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddVessel.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmSearchClients.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.ClientSearch.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.Properties.Resources.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.GenerateResource.Cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.CoreCompileInputs.cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmClientDetail.resources
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojAssemblyReference.cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.CopyComplete

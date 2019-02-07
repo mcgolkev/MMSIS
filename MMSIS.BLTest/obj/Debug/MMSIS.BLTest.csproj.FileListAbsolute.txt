@@ -1,0 +1,26 @@
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csprojResolveAssemblyReference.cache
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.dll
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.pdb
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
+F:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.dll
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.pdb
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csprojResolveAssemblyReference.cache
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
+D:\My Documents\C#\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csprojResolveAssemblyReference.cache
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\Visual Studio 2010\Private Library\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CoreCompileInputs.cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csprojAssemblyReference.cache
+D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CopyComplete
