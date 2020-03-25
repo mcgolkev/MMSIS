@@ -23,23 +23,12 @@ using MMSIS.UL;
 
 namespace MMSIS.UI
 {
-    public partial class frmAddClient : Form
+    public partial class frmAddContact : Form
     {
-        public frmAddClient()
+        public frmAddContact()
         {
             InitializeComponent();
         }
-        DataTable dataTable;
-        private string clientFn;
-        private string clientLn;
-        private string clientAddr1;
-        private string clientAddr2;
-        private string clientCity;
-        private string clientState;
-        private string clientZip;
-        private string clientCo;
-        private int dbUpdateSuccessful;
-
 //=====================================================================================
 
 //=========== ON SUBMIT BUTTON CLICKED =====================================================
@@ -49,7 +38,7 @@ namespace MMSIS.UI
             {
                 if (IsValidData())
                 {
-                    //If the data is valid, then initialize fields to string or int and instanciate Vessel object
+                    //If the data is valid, then initialize fields to string or int and instanciate Customer object
                     clientFn = (txtClientFn.Text);
                     clientLn = (txtClientLn.Text);
                     clientAddr1 = txtClientAddr1.Text;
@@ -59,7 +48,7 @@ namespace MMSIS.UI
                     clientCo = txtClientCo.Text;
 
                     //Instantiate Customer Object
-                    Customer customer = new Customer(clientFn,clientLn,clientAddr1,clientAddr2,clientCity,clientState,clientZip,clientCo);
+                    Contact contact = new Contact(clientFn,clientLn,clientAddr1,clientAddr2,clientCity,clientState,clientZip);
 
                     //Invoke AddCustomer Db stored procedure and pass in customer object
                     dbUpdateSuccessful = CustomerDb.AddCustomer(customer);
@@ -129,6 +118,17 @@ namespace MMSIS.UI
             clientState = stateAbbreviation;
         }
         //========================================================================================
+        
+        DataTable dataTable;
+        private string clientFn;
+        private string clientLn;
+        private string clientAddr1;
+        private string clientAddr2;
+        private string clientCity;
+        private string clientState;
+        private string clientZip;
+        private string clientCo;
+        private int dbUpdateSuccessful;
     }
 }
 

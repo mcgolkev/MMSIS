@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MMSIS.BL
 {
-    public class CustomerEmail
+    public class ContactEmail
     {
         public string EmailAddress { get; set; }
         public string EmailDescription { get; set; }

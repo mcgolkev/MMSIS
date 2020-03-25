@@ -7,99 +7,49 @@ namespace MMSIS.DL
 {
     public class Contact
     {
-        private string contactFn;
-        private string contactLn;
-        private string contactCoName;
-        private string contactJobTitle;
-        private string contactType;
-        private string contactNote;
-        private DateTime contactCreateDate;
-        private DateTime clientLastActivity;
-
         public Contact()
         {
-            //
+            contactCreateDate = DateTime.Now;
+            contactLastActivity = DateTime.Now;
         }
 
-        public Contact(string contactFn, string contactLn, string contactCoName, string contactJobTitle, string contactType,
-            string contactNote, string clientZip, string clientCo)
+        public Contact(string ContactFirstName, string ContactLastName,  string ContactType,
+            string ContactNote)
         {
-            this.contactFn = contactFn;
-            this.contactLn = contactLn;
-            this.contactCoName = contactCoName;
-            this.contactJobTitle = contactJobTitle;
-            this.contactType = contactType;
-            this.contactNote = contactNote;
-            this.clientZip = clientZip;
-            this.clientCo = clientCo;
+            contactFirstName = ContactFirstName;
+            contactLastName = ContactLastName;
+            contactType = ContactType;
+            contactNote = ContactNote;
         }
-        public Contact(string contactFn, string contactLn)
+        public Contact(string ContactFirstName, string ContactLastName)
         {
-            this.contactFn = contactFn;
-            this.contactLn = contactLn;
+            contactFirstName = ContactFirstName;
+            contactLastName = ContactLastName;
         }
-        public Contact(string contactFn, string contactLn,string contactCoName, string contactJobTitle, string contactType, 
-            string contactNote, string clientZip, string clientId, string clientCo, DateTime clientCreateDate, DateTime clientLastActivity)
-        {
-            this.contactFn = contactFn;
-            this.contactLn = contactLn;
-            this.contactCoName = contactCoName;
-            this.contactJobTitle = contactJobTitle;
-            this.contactType = contactType;
-            this.contactNote = contactNote;
-            this.clientZip = clientZip;
-            this.clientId = clientId;
-            this.clientCo = clientCo;
-            this.clientCreateDate = clientCreateDate;
-            this.clientLastActivity = clientLastActivity;
-        }
-
-        public string ContactFn
+        public string ContactFirstName
         {
             get
             {
-                return contactFn;
+                return contactFirstName;
             }
             set
             {
-                contactFn = value;
+                contactFirstName = value;
             }
         }
 
-        public string ContactLn
+        public string ContactLastName
         {
             get
             {
-                return contactLn;
+                return contactLastName;
             }
             set
             {
-                contactLn = value;
+                contactLastName = value;
             }
         }
 
-        public string ContactCoName
-        {
-            get
-            {
-                return contactCoName;
-            }
-            set
-            {
-                contactCoName = value;
-            }
-        }
-        public string ContactJobTitle
-        {
-            get
-            {
-                return contactJobTitle;
-            }
-            set
-            {
-                contactJobTitle = value;
-            }
-        }
         public string ContactType
         {
             get
@@ -122,65 +72,34 @@ namespace MMSIS.DL
                 contactNote = value;
             }
         }
-        public string ClientZip
-        {
-            get
-            {
-                return clientZip;
-            }
-            set
-            {
-                clientZip = value;
-            }
-        }
-
-        public string ClientId
-        {
-            get
-            {
-                return clientId;
-            }
-            set
-            {
-                clientId = value;
-            }
-        }
-
-        public string ClientCo
-        {
-            get
-            {
-                return clientCo;
-            }
-            set
-            {
-                clientCo = value;
-            }
-        }
-
-
         public DateTime ClientCreateDate
         {
             get
             {
-                return clientCreateDate;
+                return contactCreateDate;
             }
             set
             {
-                clientCreateDate = value;
+                contactCreateDate = value;
             }
         }
         public DateTime ClientLastActivity
         {
             get
             {
-                return clientLastActivity;
+                return contactLastActivity;
             }
             set
             {
-                clientLastActivity = value;
+                contactLastActivity = value;
             }
         }
 
+        private string contactFirstName;
+        private string contactLastName;
+        private string contactType;
+        private string contactNote;
+        private DateTime contactCreateDate;
+        private DateTime contactLastActivity;
     }
 }

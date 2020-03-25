@@ -37,7 +37,7 @@ namespace MMSIS.UI
 
         private void btnAddClient_Click(object sender, EventArgs e)
         {
-            Form newForm = new frmAddClient();
+            Form newForm = new frmAddContact();
             newForm.MdiParent = this;
             newForm.Show();
             //this.WindowState = FormWindowState.Normal;

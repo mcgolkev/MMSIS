@@ -119,7 +119,7 @@ namespace MMSIS.UI
                 Object ID = dataTable.Rows[lstCustomerResults.SelectedIndex]["ClientId"]; // collect client id for selected record
                 var ClientId = (ID.ToString());
                 {
-                    Form newForm = new frmClientDetail(ClientId);  // open client detail form using clientId as SP parameter
+                    Form newForm = new frmContactDetail(ClientId);  // open client detail form using clientId as SP parameter
                     newForm.MdiParent = this.ActiveMdiChild;
                     newForm.ShowDialog();
                 }

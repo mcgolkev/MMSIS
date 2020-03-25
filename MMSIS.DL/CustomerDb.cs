@@ -10,10 +10,10 @@ namespace MMSIS.DL
 {
     public class CustomerDb
     {
-        //================================================================================================
+        /*================================================================================================
         //           BEGIN GET CUSTOMER BY CLIENT ID NUMBER (NOT CURRENTLY USED)
 
-        public static Customer GetCustomer(string clientId)
+        public static GetContact(string contactId)
         {
             SqlConnection connection = DbConnection.GetConnection();
             using (SqlCommand cmd = new SqlCommand("spClientNameXClientID", connection))
@@ -52,14 +52,14 @@ namespace MMSIS.DL
                 }
             }
         } //end get customer
-          //
+          */
           //==========================================================================================
-          //            BEGIN GET CUSTOMER BY LAST NAME SEARCH TERM
+          //            BEGIN GET CONTACT BY LAST NAME SEARCH TERM
 
-        public static DataTable GetCustomerXLastName(string searchArg)
+        public static DataTable GetContactXLastName(string searchArg)
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spSelectClientNameXLastName", connection))
+            using (SqlCommand cmd = new SqlCommand("spSelectContactNameXLastName", connection))
             {
                 DataTable dataTable = new DataTable();
 
@@ -83,23 +83,21 @@ namespace MMSIS.DL
                     connection.Close();
                 }
             }
-        } //end get customer by last name
+        } //end get contact by last name
 
         //=================================================================================================
-        //               BEGIN ADD CUSTOMER
+        //               BEGIN ADD CONTACT
 
-        public static int AddCustomer(Customer customer)
+        public static int AddContact(Contact contact)
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spAddCustomer", connection))
+            using (SqlCommand cmd = new SqlCommand("spAddContact", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@ContactFirstName", SqlDbType.VarChar).Value = customer.ContactFirstName;
-                cmd.Parameters.Add("@ContactLastName", SqlDbType.VarChar).Value = customer.ContactLastName;
-                cmd.Parameters.Add("@ContactCoName", SqlDbType.VarChar).Value = customer.ContactCoName;
-                cmd.Parameters.Add("@ContactJobTitle", SqlDbType.VarChar).Value = customer.ContactJobTitle;
-                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = customer.ContactType;
-                cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = customer.ContactNote;
+                cmd.Parameters.Add("@ContactFirstName", SqlDbType.VarChar).Value = contact.ContactFirstName;
+                cmd.Parameters.Add("@ContactLastName", SqlDbType.VarChar).Value = contact.ContactLastName;
+                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = contact.ContactType;
+                cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = contact.ContactNote;
 
                 try
                 {

@@ -1,6 +1,6 @@
 ﻿namespace MMSIS.UI
 {
-    partial class frmClientDetail
+    partial class frmContactDetail
     {
         /// <summary>
         /// Required designer variable.

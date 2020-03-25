@@ -47,17 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmClientDetail.cs">
+    <Compile Include="frmContactDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientDetail.Designer.cs">
-      <DependentUpon>frmClientDetail.cs</DependentUpon>
+    <Compile Include="frmContactDetail.Designer.cs">
+      <DependentUpon>frmContactDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddClient.cs">
+    <Compile Include="frmAddContact.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddClient.Designer.cs">
-      <DependentUpon>frmAddClient.cs</DependentUpon>
+    <Compile Include="frmAddContact.Designer.cs">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAddVessel.cs">
       <SubType>Form</SubType>
@@ -93,11 +93,11 @@
     <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmClientDetail.resx">
-      <DependentUpon>frmClientDetail.cs</DependentUpon>
+    <EmbeddedResource Include="frmContactDetail.resx">
+      <DependentUpon>frmContactDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddClient.resx">
-      <DependentUpon>frmAddClient.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddContact.resx">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddVessel.resx">
       <DependentUpon>frmAddVessel.cs</DependentUpon>

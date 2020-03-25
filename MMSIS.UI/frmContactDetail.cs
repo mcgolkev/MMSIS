@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace MMSIS.UI
 {
-    public partial class frmClientDetail : Form
+    public partial class frmContactDetail : Form
     {
         string clientId;
         Customer customer;
 
-        public frmClientDetail(string ClientId)
+        public frmContactDetail(string ClientId)
         {
             InitializeComponent();
             clientId = ClientId;
