@@ -1,12 +1,12 @@
 ﻿// ===============================
 // AUTHOR     :Kevin McGoldrick
 // CREATE DATE     :2017
-// PURPOSE     :This form accepts input to add a new client
-// SPECIAL NOTES:  Only client First Name and Client Last Name are required to 
+// PURPOSE     :This form accepts input to add a new contact
+// SPECIAL NOTES:  Only contact First Name and Client Last Name are required to 
 //                  create a new client.
 // ===============================
 // Change History:
-//
+// 03/25/20 - Changed concept of client to contact all references
 //==================================
 
 
@@ -39,19 +39,14 @@ namespace MMSIS.UI
                 if (IsValidData())
                 {
                     //If the data is valid, then initialize fields to string or int and instanciate Customer object
-                    clientFn = (txtClientFn.Text);
-                    clientLn = (txtClientLn.Text);
-                    clientAddr1 = txtClientAddr1.Text;
-                    clientAddr2 = txtClientAddr2.Text;
-                    clientCity = txtClientCity.Text;
-                    clientZip = txtClientZip.Text;
-                    clientCo = txtClientCo.Text;
+                    contactFirstName = (txtContactFirstName.Text);
+                    contactLastName = (txtContactLastName.Text);
 
-                    //Instantiate Customer Object
-                    Contact contact = new Contact(clientFn,clientLn,clientAddr1,clientAddr2,clientCity,clientState,clientZip);
+                    //Instantiate Contact Object
+                    Contact contact = new Contact(contactFirstName,contactFirstName);
 
-                    //Invoke AddCustomer Db stored procedure and pass in customer object
-                    dbUpdateSuccessful = CustomerDb.AddCustomer(customer);
+                    //Invoke AddContact Db stored procedure and pass in contact object
+                    dbUpdateSuccessful = CustomerDb.AddContact(contact);
 
                 }
             }
@@ -70,12 +65,14 @@ namespace MMSIS.UI
 
         private void frmAddClient_Load(object sender, EventArgs e)
         {
-            // Loads all clients into the form when the form first opens
+            /* 
+              
+            Loads all clients into the form when the form first opens
 
             dataTable = CustomerDb.GetAllUSStates();
             System.Diagnostics.Debug.WriteLine(dataTable.Columns);
 
-            // allows user input to list states that begin wtih the input
+            //allows user input to list states that begin wtih the input
             cboState.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboState.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
@@ -92,7 +89,9 @@ namespace MMSIS.UI
             cboState.Text = "";
             clientState = "";
 
+    */
         }
+        
  //========================================================================================
 
  //============ FORM VALIDATION ===========================================================
@@ -102,14 +101,15 @@ namespace MMSIS.UI
         {
             // check to see if int input fields are valid input
 
-            return Validator.IsPresent(txtClientFn, "Client First Name") &&
-                Validator.IsPresent(txtClientLn, "Client Last Name");
+            return Validator.IsPresent(txtContactFirstName, "Client First Name") &&
+                Validator.IsPresent(txtContactLastName, "Client Last Name");
         }
 
         //===================================================================================
 
         //===============================On State Combo Box Selection Changed ============================
 
+            /*
         //  changes the value of the state code SP parameter when/and  if the user selects a state
         private void cboState_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -117,17 +117,14 @@ namespace MMSIS.UI
             var stateAbbreviation = (StateAbbreviation.ToString());
             clientState = stateAbbreviation;
         }
+
+        
+        */
         //========================================================================================
         
         DataTable dataTable;
-        private string clientFn;
-        private string clientLn;
-        private string clientAddr1;
-        private string clientAddr2;
-        private string clientCity;
-        private string clientState;
-        private string clientZip;
-        private string clientCo;
+        private string contactFirstName;
+        private string contactLastName;
         private int dbUpdateSuccessful;
     }
 }

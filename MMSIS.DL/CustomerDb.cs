@@ -114,17 +114,16 @@ namespace MMSIS.DL
         }
 
         //==========================================================================================
-        //            BEGIN GET ALL CUSTOMERS, ORDER BY LAST NAME 
+        //            BEGIN GET ALL CONTACTS, ORDER BY LAST NAME 
 
-        public static DataTable GetAllCustomers()
+        public static DataTable GetAllContacts()
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spSelectAllClients", connection))
+            using (SqlCommand cmd = new SqlCommand("spSelectAllContacts", connection))
             {
                 DataTable dataTable = new DataTable();
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.Parameters.Add("@LastName", SqlDbType.VarChar).Value = searchArg;
                 SqlDataAdapter dataAdapter = new SqlDataAdapter();
 
                 try
