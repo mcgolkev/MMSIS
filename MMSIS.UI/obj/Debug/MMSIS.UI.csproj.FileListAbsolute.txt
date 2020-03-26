@@ -70,3 +70,15 @@ D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applica
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmClientDetail.resources
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojAssemblyReference.cache
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.CopyComplete
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csprojAssemblyReference.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmContactDetail.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddContact.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddVessel.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmSearchClients.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.ClientSearch.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.Properties.Resources.resources
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.GenerateResource.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.exe
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.UI\obj\Debug\MMSIS.UI.pdb

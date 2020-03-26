@@ -46,7 +46,7 @@ namespace MMSIS.UI
                     Contact contact = new Contact(contactFirstName,contactFirstName);
 
                     //Invoke AddContact Db stored procedure and pass in contact object
-                    dbUpdateSuccessful = CustomerDb.AddContact(contact);
+                    dbUpdateSuccessful = ContactDb.AddContact(contact);
 
                 }
             }
@@ -122,7 +122,7 @@ namespace MMSIS.UI
         */
         //========================================================================================
         
-        DataTable dataTable;
+        //DataTable dataTable;
         private string contactFirstName;
         private string contactLastName;
         private int dbUpdateSuccessful;
