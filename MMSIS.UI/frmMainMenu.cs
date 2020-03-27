@@ -16,7 +16,7 @@ namespace MMSIS.UI
             InitializeComponent();
         }
 
-
+        /*
         private void btnSearchClient_Click_1(object sender, EventArgs e)
         {
             Form newForm = new ClientSearch();
@@ -24,7 +24,7 @@ namespace MMSIS.UI
             newForm.Show();
             //this.WindowState = FormWindowState.Normal;
         }
-
+        */
 
         private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace MMSIS.UI
             //this.WindowState = FormWindowState.Normal;
 
         }
-
+        /*
         private void btnSearchClients_Click(object sender, EventArgs e)
         {
             Form newForm = new frmSearchClients();
@@ -52,7 +52,7 @@ namespace MMSIS.UI
            // this.WindowState = FormWindowState.Normal;
 
         }
-
+        */
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;

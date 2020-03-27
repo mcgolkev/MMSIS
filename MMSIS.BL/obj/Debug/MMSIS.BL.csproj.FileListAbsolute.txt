@@ -9,3 +9,9 @@ D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applica
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.dll
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.pdb
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.csprojAssemblyReference.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.csprojAssemblyReference.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.pdb
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\bin\Debug\MMSIS.BL.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\bin\Debug\MMSIS.BL.pdb

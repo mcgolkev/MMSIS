@@ -65,18 +65,6 @@
     <Compile Include="frmAddVessel.Designer.cs">
       <DependentUpon>frmAddVessel.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSearchClients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSearchClients.Designer.cs">
-      <DependentUpon>frmSearchClients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSearchXClientID.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSearchXClientID.Designer.cs">
-      <DependentUpon>frmSearchXClientID.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,12 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddVessel.resx">
       <DependentUpon>frmAddVessel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSearchClients.resx">
-      <DependentUpon>frmSearchClients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSearchXClientID.resx">
-      <DependentUpon>frmSearchXClientID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>

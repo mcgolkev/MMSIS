@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerDb.cs" />
+    <Compile Include="ContactDb.cs" />
     <Compile Include="DbConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VesselDb.cs" />

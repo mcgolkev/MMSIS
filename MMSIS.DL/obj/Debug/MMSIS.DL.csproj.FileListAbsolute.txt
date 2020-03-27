@@ -30,3 +30,14 @@ D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applica
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.pdb
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.csprojAssemblyReference.cache
 D:\My Documents\Programming\C#\Visual Studio 2015 Projects\Windows Forms Applications\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CopyComplete
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.csprojAssemblyReference.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.pdb
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.DL.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.DL.pdb
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.BL.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.BLTest.dll
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.BLTest.pdb
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\bin\Debug\MMSIS.BL.pdb
+C:\Users\admin\Source\Repos\MMSIS\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CopyComplete

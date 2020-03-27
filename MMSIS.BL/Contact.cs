@@ -72,7 +72,7 @@ namespace MMSIS.DL
                 contactNote = value;
             }
         }
-        public DateTime ClientCreateDate
+        public DateTime ContactCreateDate
         {
             get
             {
@@ -83,7 +83,7 @@ namespace MMSIS.DL
                 contactCreateDate = value;
             }
         }
-        public DateTime ClientLastActivity
+        public DateTime ContactLastActivity
         {
             get
             {
@@ -95,11 +95,25 @@ namespace MMSIS.DL
             }
         }
 
+        public Guid ContactId
+        {
+            get
+            {
+                return contactId;
+            }
+            set
+            {
+                contactId = value;
+            }
+
+        }
+
         private string contactFirstName;
         private string contactLastName;
         private string contactType;
         private string contactNote;
         private DateTime contactCreateDate;
         private DateTime contactLastActivity;
+        private Guid contactId;
     }
 }

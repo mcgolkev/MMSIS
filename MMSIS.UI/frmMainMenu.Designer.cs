@@ -81,7 +81,7 @@
             this.tsbtnSearchClients.Name = "tsbtnSearchClients";
             this.tsbtnSearchClients.Size = new System.Drawing.Size(24, 24);
             this.tsbtnSearchClients.Text = "Search Clients";
-            this.tsbtnSearchClients.Click += new System.EventHandler(this.btnSearchClients_Click);
+           // this.tsbtnSearchClients.Click += new System.EventHandler(this.btnSearchClients_Click);
             // 
             // tsbtnSearchVessels
             // 

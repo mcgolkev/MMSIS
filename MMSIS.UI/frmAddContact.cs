@@ -57,6 +57,10 @@ namespace MMSIS.UI
                     ex.StackTrace, "Exception");
             }
 
+            txtContactFirstName.Text= "";
+            txtContactLastName.Text = "";
+            MessageBox.Show("Contact Added.");
+
         } // end btn click
 //=============================================================================
 
@@ -101,8 +105,8 @@ namespace MMSIS.UI
         {
             // check to see if int input fields are valid input
 
-            return Validator.IsPresent(txtContactFirstName, "Client First Name") &&
-                Validator.IsPresent(txtContactLastName, "Client Last Name");
+            return Validator.IsPresent(txtContactFirstName, "Contact First Name") &&
+                Validator.IsPresent(txtContactLastName, "Contact Last Name");
         }
 
         //===================================================================================

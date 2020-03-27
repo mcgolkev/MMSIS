@@ -1,4 +1,5 @@
 ﻿using MMSIS.DL;
+using MMSIS.BL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,20 +14,19 @@ namespace MMSIS.UI
 {
     public partial class frmContactDetail : Form
     {
-        string clientId;
-        Customer customer;
+        Contact contact;
 
-        public frmContactDetail(string ClientId)
+        public frmContactDetail(Guid ContactId)
         {
             InitializeComponent();
-            clientId = ClientId;
+            contactId = ContactId;
         }
 
         private void frmClientDetail_Load(object sender, EventArgs e)
         {
             try
             {
-                    customer = CustomerDb.GetCustomer(clientId);
+                    contact = ContactDb.GetContact(contactId);
 
                     DisplayCustomer();
 
@@ -42,13 +42,14 @@ namespace MMSIS.UI
 
         public void DisplayCustomer()
         {
-            txtClientFn.Text = customer.ClientFn;
-            txtClientLn.Text = customer.ClientLn;
+            txtContactFirstName.Text = contact.ContactFirstName;
+            txtContactLastName.Text = contact.ContactLastName;
             //txtClientLastActivity.Text = customer.ClientLastActivity.ToString();
-            txtClientId.Text = customer.ClientId.ToString();
-            txtClientCreateDate.Text = customer.ClientCreateDate.ToString();
+            txtContactId.Text = contact.ContactId.ToString();
+            txtContactCreateDate.Text = contact.ContactCreateDate.ToString();
            // txtInputClientId.Text = "";
         }
 
+        Guid contactId;
     }
 }

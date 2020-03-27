@@ -14,8 +14,11 @@ namespace MMSIS.DL
         {
 
             string connectionString =
-                "Data Source=localhost\\MSSQLSERVER2012;Initial Catalog=CISDB;" +
-                "Integrated Security = True";
+                "Data Source = ATTIC-PC; Initial Catalog = mmsis;" +
+                "Persist Security Info = True;" +
+                "User ID = sa; Password = 7644691";
+                 // "Data Source=localhost\\MSSQLSERVER2012;Initial Catalog=CISDB;" +
+                //"Integrated Security = True";
             SqlConnection connection = new SqlConnection(connectionString);
             return connection;
         }

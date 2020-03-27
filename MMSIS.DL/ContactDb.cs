@@ -5,21 +5,23 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using MMSIS.DL;
+using MMSIS.BL;
 
 namespace MMSIS.DL
 {
-    public class CustomerDb
+    public class ContactDb
     {
-        /*================================================================================================
-        //           BEGIN GET CUSTOMER BY CLIENT ID NUMBER (NOT CURRENTLY USED)
+        
+        //===============================================================================================
+        //           BEGIN GET CUSTOMER BY CLIENT ID NUMBER
 
-        public static GetContact(string contactId)
+        public static Contact GetContact(Guid contactId)
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spClientNameXClientID", connection))
+            using (SqlCommand cmd = new SqlCommand("spContactNameXContactID", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@ClientId", SqlDbType.VarChar).Value = clientId;
+                cmd.Parameters.Add("@ContactId", SqlDbType.VarChar).Value = contactId;
 
 
                 try
@@ -29,13 +31,13 @@ namespace MMSIS.DL
                         cmd.ExecuteReader(CommandBehavior.SingleRow);
                     if (custReader.Read())
                     {
-                        Customer customer = new Customer();
-                        customer.ClientId = custReader["ClientId"].ToString();
-                        customer.ClientFn = custReader["ClientFn"].ToString();
-                        customer.ClientLn = custReader["ClientLn"].ToString();
-                        customer.ClientCreateDate = (DateTime)custReader["ClientCreateDate"];
-                        customer.ClientLastActivity = (DateTime)custReader["ClientNaLastUpdate"];
-                        return customer;
+                        Contact contact = new Contact();
+                        contact.ContactId = (Guid)custReader["ContactId"];
+                        contact.ContactFirstName = custReader["ContactFirstName"].ToString();
+                        contact.ContactLastName = custReader["ContactLastName"].ToString();
+                        contact.ContactCreateDate = (DateTime)custReader["ContactCreateDate"];
+                        contact.ContactLastActivity = (DateTime)custReader["ContactNaLastUpdate"];
+                        return contact;
                     }
                     else
                     {
@@ -52,7 +54,7 @@ namespace MMSIS.DL
                 }
             }
         } //end get customer
-          */
+         
           //==========================================================================================
           //            BEGIN GET CONTACT BY LAST NAME SEARCH TERM
 
@@ -96,8 +98,8 @@ namespace MMSIS.DL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@ContactFirstName", SqlDbType.VarChar).Value = contact.ContactFirstName;
                 cmd.Parameters.Add("@ContactLastName", SqlDbType.VarChar).Value = contact.ContactLastName;
-                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = contact.ContactType;
-                cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = contact.ContactNote;
+                //cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = contact.ContactType;
+                //cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = contact.ContactNote;
 
                 try
                 {
