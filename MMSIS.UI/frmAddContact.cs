@@ -41,13 +41,29 @@ namespace MMSIS.UI
                     //If the data is valid, then initialize fields to string or int and instanciate Customer object
                     contactFirstName = (txtContactFirstName.Text);
                     contactLastName = (txtContactLastName.Text);
+                    contactType = (txtContactType.Text);
+                    contactNote = (txtContactNote.Text);
+                    contactStreet = (txtStreet.Text);
+                    contactCity = (txtCity.Text);
+                    contactState = (txtState.Text);
 
                     //Instantiate Contact Object
-                    Contact contact = new Contact(contactFirstName,contactFirstName);
+                    Contact contact = new Contact(contactFirstName, contactLastName, contactType,
+                        contactNote, contactStreet,contactCity,contactState);
 
                     //Invoke AddContact Db stored procedure and pass in contact object
                     dbUpdateSuccessful = ContactDb.AddContact(contact);
-
+                   
+                    if (dbUpdateSuccessful ==0 ) 
+                    {
+                        ClearAllFields();
+                        MessageBox.Show("Database exception, contact administrator.");
+                    }
+                    else
+                    {
+                        ClearAllFields();
+                        MessageBox.Show("Contact Added.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -57,9 +73,6 @@ namespace MMSIS.UI
                     ex.StackTrace, "Exception");
             }
 
-            txtContactFirstName.Text= "";
-            txtContactLastName.Text = "";
-            MessageBox.Show("Contact Added.");
 
         } // end btn click
 //=============================================================================
@@ -125,11 +138,42 @@ namespace MMSIS.UI
         
         */
         //========================================================================================
-        
+
+        private void ClearAllFields()
+        {
+            txtContactFirstName.Text = "";
+            txtContactLastName.Text = "";
+            txtContactType.Text = "";
+            txtContactNote.Text = "";
+            txtStreet.Text = "";
+            txtCity.Text = "";
+            txtState.Text = "";
+        }
+
         //DataTable dataTable;
         private string contactFirstName;
         private string contactLastName;
         private int dbUpdateSuccessful;
+        private string contactStreet;
+        private string contactCity;
+        private string contactState;
+        private string contactType;
+        private string contactNote;
+
+        private void lblStreet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCity_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblState_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

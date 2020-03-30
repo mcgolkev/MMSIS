@@ -15,3 +15,9 @@ C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.dll
 C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\obj\Debug\MMSIS.BL.pdb
 C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\bin\Debug\MMSIS.BL.dll
 C:\Users\admin\Source\Repos\MMSIS\MMSIS.BL\bin\Debug\MMSIS.BL.pdb
+D:\C#\Source\Repros\202003301\MMSIS.BL\bin\Debug\MMSIS.BL.dll
+D:\C#\Source\Repros\202003301\MMSIS.BL\bin\Debug\MMSIS.BL.pdb
+D:\C#\Source\Repros\202003301\MMSIS.BL\obj\Debug\MMSIS.BL.csprojAssemblyReference.cache
+D:\C#\Source\Repros\202003301\MMSIS.BL\obj\Debug\MMSIS.BL.csproj.CoreCompileInputs.cache
+D:\C#\Source\Repros\202003301\MMSIS.BL\obj\Debug\MMSIS.BL.dll
+D:\C#\Source\Repros\202003301\MMSIS.BL\obj\Debug\MMSIS.BL.pdb

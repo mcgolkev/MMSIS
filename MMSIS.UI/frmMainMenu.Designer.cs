@@ -28,83 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbtnAddVessel = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnAddClient = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnSearchClients = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnSearchVessels = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MnuClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuClientAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStrip1
+            // menuStrip1
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbtnAddVessel,
-            this.tsbtnAddClient,
-            this.tsbtnSearchClients,
-            this.tsbtnSearchVessels});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(25, 640);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuClient});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(861, 33);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // tsbtnAddVessel
+            // MnuClient
             // 
-            this.tsbtnAddVessel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnAddVessel.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnAddVessel.Image")));
-            this.tsbtnAddVessel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnAddVessel.Name = "tsbtnAddVessel";
-            this.tsbtnAddVessel.Size = new System.Drawing.Size(24, 24);
-            this.tsbtnAddVessel.Text = "Add Vessel";
-            this.tsbtnAddVessel.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            this.MnuClient.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuClientAdd});
+            this.MnuClient.Name = "MnuClient";
+            this.MnuClient.Size = new System.Drawing.Size(72, 29);
+            this.MnuClient.Text = "Client";
             // 
-            // tsbtnAddClient
+            // MnuClientAdd
             // 
-            this.tsbtnAddClient.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnAddClient.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnAddClient.Image")));
-            this.tsbtnAddClient.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnAddClient.Name = "tsbtnAddClient";
-            this.tsbtnAddClient.Size = new System.Drawing.Size(24, 24);
-            this.tsbtnAddClient.Text = "Add Client";
-            this.tsbtnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
-            // 
-            // tsbtnSearchClients
-            // 
-            this.tsbtnSearchClients.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnSearchClients.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearchClients.Image")));
-            this.tsbtnSearchClients.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnSearchClients.Name = "tsbtnSearchClients";
-            this.tsbtnSearchClients.Size = new System.Drawing.Size(24, 24);
-            this.tsbtnSearchClients.Text = "Search Clients";
-           // this.tsbtnSearchClients.Click += new System.EventHandler(this.btnSearchClients_Click);
-            // 
-            // tsbtnSearchVessels
-            // 
-            this.tsbtnSearchVessels.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnSearchVessels.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearchVessels.Image")));
-            this.tsbtnSearchVessels.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnSearchVessels.Name = "tsbtnSearchVessels";
-            this.tsbtnSearchVessels.Size = new System.Drawing.Size(24, 24);
-            this.tsbtnSearchVessels.Text = "toolStripButton1";
+            this.MnuClientAdd.Name = "MnuClientAdd";
+            this.MnuClientAdd.Size = new System.Drawing.Size(270, 34);
+            this.MnuClientAdd.Text = "Add";
+            this.MnuClientAdd.Click += new System.EventHandler(this.MnuClientAdd_Click);
             // 
             // frmMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 640);
-            this.Controls.Add(this.toolStrip1);
+            this.ClientSize = new System.Drawing.Size(861, 800);
+            this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMainMenu";
-            this.Text = "Form2";
+            this.Text = "MMSIS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMainMenu_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.mnuAddClient_Click);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,10 +83,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsbtnAddVessel;
-        private System.Windows.Forms.ToolStripButton tsbtnAddClient;
-        private System.Windows.Forms.ToolStripButton tsbtnSearchClients;
-        private System.Windows.Forms.ToolStripButton tsbtnSearchVessels;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem MnuClient;
+        private System.Windows.Forms.ToolStripMenuItem MnuClientAdd;
     }
 }

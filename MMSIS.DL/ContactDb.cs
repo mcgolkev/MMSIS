@@ -93,13 +93,16 @@ namespace MMSIS.DL
         public static int AddContact(Contact contact)
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spAddContact", connection))
+            using (SqlCommand cmd = new SqlCommand("spAddContactWithAddress", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@ContactFirstName", SqlDbType.VarChar).Value = contact.ContactFirstName;
                 cmd.Parameters.Add("@ContactLastName", SqlDbType.VarChar).Value = contact.ContactLastName;
-                //cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = contact.ContactType;
-                //cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = contact.ContactNote;
+                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = contact.ContactType;
+                cmd.Parameters.Add("@ContactNote", SqlDbType.VarChar).Value = contact.ContactNote;
+                cmd.Parameters.Add("@ContactStreet", SqlDbType.VarChar).Value = contact.ContactStreet;
+                cmd.Parameters.Add("@ContactCity", SqlDbType.VarChar).Value = contact.ContactCity;
+                cmd.Parameters.Add("@ContactState", SqlDbType.VarChar).Value = contact.ContactState;
 
                 try
                 {
@@ -111,6 +114,10 @@ namespace MMSIS.DL
                 catch
                 {
                     return 0;
+                }
+                finally
+                {
+                    connection.Close();
                 }
             }
         }

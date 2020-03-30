@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace MMSIS.UI
@@ -15,6 +9,9 @@ namespace MMSIS.UI
         {
             InitializeComponent();
         }
+        
+        private frmAddContact optionsInstance = null;
+
 
         /*
         private void btnSearchClient_Click_1(object sender, EventArgs e)
@@ -53,9 +50,32 @@ namespace MMSIS.UI
 
         }
         */
-        private void frmMainMenu_Load(object sender, EventArgs e)
+
+
+        private void mnuAddClient_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void MnuClientAdd_Click(object sender, EventArgs e)
+        {
+
+            if (optionsInstance == null || !optionsInstance.Visible)
+            {
+                optionsInstance = new frmAddContact();
+                optionsInstance.Show();
+            }
+            optionsInstance.BringToFront();
+
+            //Form newForm = new frmAddContact();
+            //newForm.Parent = this;
+            //newForm.Show();
+            //this.WindowState = FormWindowState.Normal;
         }
     }
 }

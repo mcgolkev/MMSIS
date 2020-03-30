@@ -14,12 +14,15 @@ namespace MMSIS.DL
         }
 
         public Contact(string ContactFirstName, string ContactLastName,  string ContactType,
-            string ContactNote)
+            string ContactNote, string ContactCity, string ContactStreet, string ContactState)
         {
             contactFirstName = ContactFirstName;
             contactLastName = ContactLastName;
             contactType = ContactType;
             contactNote = ContactNote;
+            contactStreet = ContactStreet;
+            contactState = ContactState;
+            contactCity = ContactCity;
         }
         public Contact(string ContactFirstName, string ContactLastName)
         {
@@ -94,6 +97,39 @@ namespace MMSIS.DL
                 contactLastActivity = value;
             }
         }
+        public string ContactCity
+        {
+            get
+            {
+                return contactCity;
+            }
+            set
+            {
+                contactCity = value;
+            }
+        }
+        public string ContactState
+        {
+            get
+            {
+                return contactState;
+            }
+            set
+            {
+                contactState = value;
+            }
+        }
+        public string ContactStreet
+        {
+            get
+            {
+                return contactStreet;
+            }
+            set
+            {
+                contactStreet = value;
+            }
+        }
 
         public Guid ContactId
         {
@@ -112,6 +148,9 @@ namespace MMSIS.DL
         private string contactLastName;
         private string contactType;
         private string contactNote;
+        private string contactStreet;
+        private string contactState;
+        private string contactCity;
         private DateTime contactCreateDate;
         private DateTime contactLastActivity;
         private Guid contactId;
