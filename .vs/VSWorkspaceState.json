@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MMSIS.BL"
   ],
+  "SelectedNode": "\\MMSIS.BL\\Contact.cs",
   "PreviewInSolutionExplorer": false
 }

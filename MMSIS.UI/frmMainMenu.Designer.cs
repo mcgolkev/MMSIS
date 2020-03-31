@@ -31,6 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MnuClient = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuClientAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +41,8 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuClient});
+            this.MnuClient,
+            this.adminToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(861, 33);
@@ -50,7 +53,8 @@
             // MnuClient
             // 
             this.MnuClient.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuClientAdd});
+            this.MnuClientAdd,
+            this.findToolStripMenuItem});
             this.MnuClient.Name = "MnuClient";
             this.MnuClient.Size = new System.Drawing.Size(72, 29);
             this.MnuClient.Text = "Client";
@@ -61,6 +65,19 @@
             this.MnuClientAdd.Size = new System.Drawing.Size(270, 34);
             this.MnuClientAdd.Text = "Add";
             this.MnuClientAdd.Click += new System.EventHandler(this.MnuClientAdd_Click);
+            // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
+            this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            // 
+            // findToolStripMenuItem
+            // 
+            this.findToolStripMenuItem.Name = "findToolStripMenuItem";
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.findToolStripMenuItem.Text = "Find";
             // 
             // frmMainMenu
             // 
@@ -86,5 +103,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MnuClient;
         private System.Windows.Forms.ToolStripMenuItem MnuClientAdd;
+        private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
     }
 }

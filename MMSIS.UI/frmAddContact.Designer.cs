@@ -42,10 +42,10 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblState = new System.Windows.Forms.Label();
             this.txtState = new System.Windows.Forms.TextBox();
-            this.txtContactType = new System.Windows.Forms.TextBox();
             this.txtContactNote = new System.Windows.Forms.TextBox();
             this.lblContactType = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
+            this.cboContactType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -171,13 +171,6 @@
             this.txtState.Size = new System.Drawing.Size(225, 26);
             this.txtState.TabIndex = 5;
             // 
-            // txtContactType
-            // 
-            this.txtContactType.Location = new System.Drawing.Point(334, 30);
-            this.txtContactType.Name = "txtContactType";
-            this.txtContactType.Size = new System.Drawing.Size(100, 26);
-            this.txtContactType.TabIndex = 0;
-            // 
             // txtContactNote
             // 
             this.txtContactNote.Location = new System.Drawing.Point(193, 338);
@@ -204,16 +197,25 @@
             this.lblNote.TabIndex = 35;
             this.lblNote.Text = "Note:";
             // 
+            // cboContactType
+            // 
+            this.cboContactType.AllowDrop = true;
+            this.cboContactType.FormattingEnabled = true;
+            this.cboContactType.Location = new System.Drawing.Point(333, 27);
+            this.cboContactType.Name = "cboContactType";
+            this.cboContactType.Size = new System.Drawing.Size(121, 28);
+            this.cboContactType.TabIndex = 36;
+            // 
             // frmAddContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(806, 801);
+            this.Controls.Add(this.cboContactType);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.lblContactType);
             this.Controls.Add(this.txtContactNote);
-            this.Controls.Add(this.txtContactType);
             this.Controls.Add(this.txtState);
             this.Controls.Add(this.lblState);
             this.Controls.Add(this.lblAddress);
@@ -254,9 +256,9 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblState;
         private System.Windows.Forms.TextBox txtState;
-        private System.Windows.Forms.TextBox txtContactType;
         private System.Windows.Forms.TextBox txtContactNote;
         private System.Windows.Forms.Label lblContactType;
         private System.Windows.Forms.Label lblNote;
+        private System.Windows.Forms.ComboBox cboContactType;
     }
 }

@@ -123,6 +123,38 @@ namespace MMSIS.DL
         }
 
         //==========================================================================================
+
+        //=================================================================================================
+        //               BEGIN ADD CONTACT TYPE
+
+        public static int AddContactType(string ContactType)
+        {
+            SqlConnection connection = DbConnection.GetConnection();
+            using (SqlCommand cmd = new SqlCommand("spAddContactType", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = ContactType;
+
+                try
+                {
+                    connection.Open();
+                    int i = cmd.ExecuteNonQuery(); //stores the no. of rows affected.
+
+                    return i;
+                }
+                catch
+                {
+                    return 0;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        //==========================================================================================
+
         //            BEGIN GET ALL CONTACTS, ORDER BY LAST NAME 
 
         public static DataTable GetAllContacts()
@@ -154,6 +186,43 @@ namespace MMSIS.DL
         } //end get customer by last name
 
         //==========================================================================================
+
+        //==========================================================================================
+        //            BEGIN GET ALL CONTACT TYPE NAMES 
+
+        public static DataTable GetAllContactTypes()
+        {
+            SqlConnection connection = DbConnection.GetConnection();
+            using (SqlCommand cmd = new SqlCommand("spGetAllContactTypes", connection))
+            {
+                DataTable dataTable = new DataTable();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter dataAdapter = new SqlDataAdapter();
+
+                try
+                {
+                    connection.Open();
+                    dataAdapter.SelectCommand = cmd;
+                    dataAdapter.Fill(dataTable);
+                    return dataTable;
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        } //end get contact type names
+
+        //==========================================================================================
+
+
+
+
         //            BEGIN GET ALL US STATES 
 
         public static DataTable GetAllUSStates()

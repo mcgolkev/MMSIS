@@ -10,7 +10,9 @@ namespace MMSIS.UI
             InitializeComponent();
         }
         
-        private frmAddContact optionsInstance = null;
+        private frmAddContact AddContactInstance = null;
+        private frmAdmin AdminInstance = null;
+
 
 
         /*
@@ -65,17 +67,28 @@ namespace MMSIS.UI
         private void MnuClientAdd_Click(object sender, EventArgs e)
         {
 
-            if (optionsInstance == null || !optionsInstance.Visible)
+            if (AddContactInstance == null || !AddContactInstance.Visible)
             {
-                optionsInstance = new frmAddContact();
-                optionsInstance.Show();
+                AddContactInstance = new frmAddContact();
+                AddContactInstance.Show();
             }
-            optionsInstance.BringToFront();
+            AddContactInstance.BringToFront();
 
             //Form newForm = new frmAddContact();
             //newForm.Parent = this;
             //newForm.Show();
             //this.WindowState = FormWindowState.Normal;
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (AdminInstance == null || !AdminInstance.Visible)
+            {
+                AdminInstance = new frmAdmin();
+                AdminInstance.Show();
+            }
+            AdminInstance.BringToFront();
+
         }
     }
 }

@@ -41,7 +41,7 @@ namespace MMSIS.UI
                     //If the data is valid, then initialize fields to string or int and instanciate Customer object
                     contactFirstName = (txtContactFirstName.Text);
                     contactLastName = (txtContactLastName.Text);
-                    contactType = (txtContactType.Text);
+                    contactType = (cboContactType.Text);
                     contactNote = (txtContactNote.Text);
                     contactStreet = (txtStreet.Text);
                     contactCity = (txtCity.Text);
@@ -82,31 +82,25 @@ namespace MMSIS.UI
 
         private void frmAddClient_Load(object sender, EventArgs e)
         {
-            /* 
-              
-            Loads all clients into the form when the form first opens
-
-            dataTable = CustomerDb.GetAllUSStates();
+            //Loads contact types into the form when the form first opens
+            DataTable dataTable = ContactDb.GetAllContactTypes();
             System.Diagnostics.Debug.WriteLine(dataTable.Columns);
 
             //allows user input to list states that begin wtih the input
-            cboState.AutoCompleteSource = AutoCompleteSource.ListItems;
-            cboState.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboContactType.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cboContactType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
             // fill state combo box with state names from database
             var lst = new List<String>();
             foreach (DataRow row in dataTable.Rows)
             {
-                lst.Add(row["LongStateName"].ToString());
+                lst.Add(row["ContactType"].ToString());
             }
-            cboState.Items.Clear();
-            cboState.DataSource = lst;
+            cboContactType.Items.Clear();
+            cboContactType.DataSource = lst;
             //sets intial values of state combo box and state SP pararamter to "" so defalut
             // value is null if no state is selected by the user.
-            cboState.Text = "";
-            clientState = "";
-
-    */
+            cboContactType.Text = "";
         }
         
  //========================================================================================
@@ -143,7 +137,7 @@ namespace MMSIS.UI
         {
             txtContactFirstName.Text = "";
             txtContactLastName.Text = "";
-            txtContactType.Text = "";
+            cboContactType.Text = "";
             txtContactNote.Text = "";
             txtStreet.Text = "";
             txtCity.Text = "";
