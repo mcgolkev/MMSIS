@@ -207,7 +207,8 @@ namespace MMSIS.DL
                     dataAdapter.Fill(dataTable);
                     return dataTable;
                 }
-                catch (SqlException ex)
+
+                catch (System.Data.SqlClient.SqlException ex)
                 {
                     throw ex;
                 }

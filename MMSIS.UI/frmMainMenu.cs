@@ -1,4 +1,5 @@
 ﻿using System;
+using MMSIS.BL;
 using System.Windows.Forms;
 
 namespace MMSIS.UI
@@ -89,6 +90,11 @@ namespace MMSIS.UI
             }
             AdminInstance.BringToFront();
 
+        }
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

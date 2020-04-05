@@ -82,25 +82,34 @@ namespace MMSIS.UI
 
         private void frmAddClient_Load(object sender, EventArgs e)
         {
-            //Loads contact types into the form when the form first opens
-            DataTable dataTable = ContactDb.GetAllContactTypes();
-            System.Diagnostics.Debug.WriteLine(dataTable.Columns);
-
-            //allows user input to list states that begin wtih the input
-            cboContactType.AutoCompleteSource = AutoCompleteSource.ListItems;
-            cboContactType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-
-            // fill state combo box with state names from database
-            var lst = new List<String>();
-            foreach (DataRow row in dataTable.Rows)
+            try
             {
-                lst.Add(row["ContactType"].ToString());
+                //Loads contact types into the form when the form first opens
+                DataTable dataTable = ContactDb.GetAllContactTypes();
+                System.Diagnostics.Debug.WriteLine(dataTable.Columns);
+
+                //allows user input to list states that begin wtih the input
+                cboContactType.AutoCompleteSource = AutoCompleteSource.ListItems;
+                cboContactType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+
+                // fill state combo box with state names from database
+                var lst = new List<String>();
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    lst.Add(row["ContactType"].ToString());
+                }
+                cboContactType.Items.Clear();
+                cboContactType.DataSource = lst;
+                //sets intial values of state combo box and state SP pararamter to "" so defalut
+                // value is null if no state is selected by the user.
+                cboContactType.Text = "";
             }
-            cboContactType.Items.Clear();
-            cboContactType.DataSource = lst;
-            //sets intial values of state combo box and state SP pararamter to "" so defalut
-            // value is null if no state is selected by the user.
-            cboContactType.Text = "";
+            catch
+            {
+                MessageBox.Show("Database Error, contact types are not available.  " +
+                    "Contact administrator");
+
+            }
         }
         
  //========================================================================================

@@ -52,3 +52,14 @@ D:\C#\Source\Repros\202003301\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CoreCompileInpu
 D:\C#\Source\Repros\202003301\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CopyComplete
 D:\C#\Source\Repros\202003301\MMSIS.DL\obj\Debug\MMSIS.DL.dll
 D:\C#\Source\Repros\202003301\MMSIS.DL\obj\Debug\MMSIS.DL.pdb
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.DL.dll
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.DL.pdb
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.BL.dll
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.BLTest.dll
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.BLTest.pdb
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\bin\Debug\MMSIS.BL.pdb
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\obj\Debug\MMSIS.DL.csprojAssemblyReference.cache
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CopyComplete
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\obj\Debug\MMSIS.DL.dll
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\obj\Debug\MMSIS.DL.pdb
+D:\My Documents\Programming\C#\Source\202004041\MMSIS.DL\obj\Debug\MMSIS.DL.csproj.CoreCompileInputs.cache

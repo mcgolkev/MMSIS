@@ -20,15 +20,24 @@ namespace MMSIS.UI
 
 private void frmAdmin_Load(object sender, EventArgs e)
         {
-            var dataTable = ContactDb.GetAllContactTypes();  // GET ALL CONTACTS
-
-            var lst = new List<String>();
-            foreach (DataRow row in dataTable.Rows)
+            try
             {
-                lst.Add(row["ContactType"].ToString());
+                var dataTable = ContactDb.GetAllContactTypes();  // GET ALL CONTACTS
+                var lst = new List<String>();
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    lst.Add(row["ContactType"].ToString());
+                }
+                lstContactType.Items.Clear();
+                lstContactType.DataSource = lst;
+
             }
-            lstContactType.Items.Clear();
-            lstContactType.DataSource = lst;
+            catch
+            {
+                MessageBox.Show("Database Error, contact types are not available.  " +
+                    "Contact administrator");
+            }
+
         }
 
         private void addContactTypeToolStripMenuItem_Click(object sender, EventArgs e)
