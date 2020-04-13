@@ -16,9 +16,23 @@ namespace MMSIS.UI
         public frmAdmin()
         {
             InitializeComponent();
+
+            }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+            loadFormData();
+            
         }
 
-private void frmAdmin_Load(object sender, EventArgs e)
+        private void addContactTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form newForm = new frmAddContactType();  // open add contact type form
+            newForm.MdiParent = this.ActiveMdiChild;
+            newForm.ShowDialog();
+        }
+
+        private void loadFormData()
         {
             try
             {
@@ -37,22 +51,9 @@ private void frmAdmin_Load(object sender, EventArgs e)
                 MessageBox.Show("Database Error, contact types are not available.  " +
                     "Contact administrator");
             }
-
         }
 
-        private void addContactTypeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form newForm = new frmAddContactType();  // open add contact type form
-            newForm.MdiParent = this.ActiveMdiChild;
-            newForm.ShowDialog();
-        }
-        void newForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //when child form is closed, this code is executed
-            this.Refresh();
-        }
-
-    }
+}
 
 }
 
