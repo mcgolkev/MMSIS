@@ -83,6 +83,12 @@
     <Compile Include="frmAddVessel.Designer.cs">
       <DependentUpon>frmAddVessel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDeleteContactType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteContactType.Designer.cs">
+      <DependentUpon>frmDeleteContactType.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddVessel.resx">
       <DependentUpon>frmAddVessel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteContactType.resx">
+      <DependentUpon>frmDeleteContactType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>

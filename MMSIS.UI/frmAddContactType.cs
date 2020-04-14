@@ -82,7 +82,6 @@ namespace MMSIS.UI
                         txtContactType.Text = "";
                         txtContactType.Focus();
                         MessageBox.Show("Contact Type Added.");
-                        ButtonClicked?.Invoke(sender, e);
                     }
                 }
             }

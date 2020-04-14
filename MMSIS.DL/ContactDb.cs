@@ -155,6 +155,37 @@ namespace MMSIS.DL
 
         //==========================================================================================
 
+        //=================================================================================================
+        //               BEGIN DELETE CONTACT TYPE
+
+        public static int DeleteContactType(string ContactType)
+        {
+            SqlConnection connection = DbConnection.GetConnection();
+            using (SqlCommand cmd = new SqlCommand("spDeleteContactType", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@ContactType", SqlDbType.VarChar).Value = ContactType;
+
+                try
+                {
+                    connection.Open();
+                    int i = cmd.ExecuteNonQuery(); //stores the no. of rows affected.
+
+                    return i;
+                }
+                catch
+                {
+                    return 0;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        //==========================================================================================
+
         //            BEGIN GET ALL CONTACTS, ORDER BY LAST NAME 
 
         public static DataTable GetAllContacts()

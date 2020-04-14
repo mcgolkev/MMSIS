@@ -30,6 +30,7 @@ namespace MMSIS.UI
             Form newForm = new frmAddContactType();  // open add contact type form
             newForm.MdiParent = this.ActiveMdiChild;
             newForm.ShowDialog();
+            loadFormData();
         }
 
         private void loadFormData()
@@ -42,7 +43,6 @@ namespace MMSIS.UI
                 {
                     lst.Add(row["ContactType"].ToString());
                 }
-                lstContactType.Items.Clear();
                 lstContactType.DataSource = lst;
 
             }
@@ -53,7 +53,19 @@ namespace MMSIS.UI
             }
         }
 
-}
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void deleteContactTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form newForm = new frmDeleteContactType();  // open add contact type form
+            newForm.MdiParent = this.ActiveMdiChild;
+            newForm.ShowDialog();
+            loadFormData();
+        }
+    }
 
 }
 

@@ -34,6 +34,7 @@
             this.lstContactType = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addContactTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteContactTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,16 +70,25 @@
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addContactTypeToolStripMenuItem});
+            this.addContactTypeToolStripMenuItem,
+            this.deleteContactTypeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 69);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(243, 101);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // addContactTypeToolStripMenuItem
             // 
             this.addContactTypeToolStripMenuItem.Name = "addContactTypeToolStripMenuItem";
-            this.addContactTypeToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.addContactTypeToolStripMenuItem.Size = new System.Drawing.Size(226, 32);
             this.addContactTypeToolStripMenuItem.Text = "Add Contact Type";
             this.addContactTypeToolStripMenuItem.Click += new System.EventHandler(this.addContactTypeToolStripMenuItem_Click);
+            // 
+            // deleteContactTypeToolStripMenuItem
+            // 
+            this.deleteContactTypeToolStripMenuItem.Name = "deleteContactTypeToolStripMenuItem";
+            this.deleteContactTypeToolStripMenuItem.Size = new System.Drawing.Size(242, 32);
+            this.deleteContactTypeToolStripMenuItem.Text = "Delete Contact Type";
+            this.deleteContactTypeToolStripMenuItem.Click += new System.EventHandler(this.deleteContactTypeToolStripMenuItem_Click);
             // 
             // frmAdmin
             // 
@@ -104,5 +114,6 @@
         private System.Windows.Forms.ListBox lstContactType;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addContactTypeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteContactTypeToolStripMenuItem;
     }
 }
