@@ -19,8 +19,6 @@ namespace MMSIS.UI
             InitializeComponent();
         }
         
-        public event EventHandler ButtonClicked;
-
         private void label1_Click(object sender, EventArgs e)
         {
             //

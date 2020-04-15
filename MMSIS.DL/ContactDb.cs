@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using MMSIS.DL;
 using MMSIS.BL;
+using System.Threading;
 
 namespace MMSIS.DL
 {
@@ -154,7 +155,35 @@ namespace MMSIS.DL
         }
 
         //==========================================================================================
+        //==========================================================================================
 
+        //            BEGIN CHECK IF CONTACT TYPE EXISTS IN CONTACT TABLE
+
+        public static int GetContactTypes(string ContactType)
+        {
+            SqlConnection connection = DbConnection.GetConnection();
+            using (SqlCommand cmd = new SqlCommand("spContactsXContactType", connection))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    connection.Open();
+                    int i = cmd.ExecuteNonQuery();
+                    var count = cmd.Parameters["@ret_value"].Value;
+                    return count;
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        } //end get contacts by contact type
+
+        //==========================================================================================
         //=================================================================================================
         //               BEGIN DELETE CONTACT TYPE
 
@@ -284,6 +313,9 @@ namespace MMSIS.DL
                 }
             }
         }
+       
+        int contactTypeExists;
+
     }
 
 } //end class

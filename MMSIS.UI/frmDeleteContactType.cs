@@ -48,6 +48,19 @@ namespace MMSIS.UI
         {
             //capture index of contact type highlighted to be deleted
 
+            var selectedContactType = "Broker";
+
+            //check to see if contact type is currently being used and, therefore, cannot be delelted
+            try
+            {
+                CkContactTypeExits = ContactDb.GetContactTypes(selectedContactType);
+            }
+            catch
+            {
+                MessageBox.Show("Database Error, contact types are not available.  " +
+                    "Contact administrator");
+            }
+
             //Attempt to delete contact type from database
             try
             {
@@ -74,6 +87,8 @@ namespace MMSIS.UI
         }
         
         int dbDeleteSuccessful;
+        int CkContactTypeExits;
+        string SelctedContactType;
         string contactType;
 
     }
