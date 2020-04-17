@@ -46,30 +46,44 @@ namespace MMSIS.UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //capture index of contact type highlighted to be deleted
+            //capture selected item of contact type highlighted to be deleted
 
-            var selectedContactType = "Broker";
+            string  selectedContactType = "";
+            selectedContactType = lstContactType.GetItemText(lstContactType.SelectedItem);
+            if (selectedContactType == "")
+            {
+                MessageBox.Show("No Contact Type selected.");
+                return;
+            }
 
             //check to see if contact type is currently being used and, therefore, cannot be delelted
             try
             {
                 CkContactTypeExits = ContactDb.GetContactTypes(selectedContactType);
+                if (CkContactTypeExits != 0)
+                    {
+                    MessageBox.Show("Cannot delete '" + selectedContactType + "' contact type because " +
+                        "it is currently assigned to a contact.");
+                    return;
+                    }
             }
             catch
             {
                 MessageBox.Show("Database Error, contact types are not available.  " +
                     "Contact administrator");
+                return;
             }
 
             //Attempt to delete contact type from database
             try
             {
-                dbDeleteSuccessful = ContactDb.DeleteContactType(contactType);
+                dbDeleteSuccessful = ContactDb.DeleteContactType(selectedContactType);
 
                 if (dbDeleteSuccessful == 0)
                 {
                     MessageBox.Show("Database exception, contact type has " +
                         "not been deleted. Contact administrator.");
+                    return;
                 }
                 else
                 {
@@ -81,6 +95,7 @@ namespace MMSIS.UI
             {
                 MessageBox.Show("Database Error, contact types are not available.  " +
                     "Contact administrator");
+                return;
             }
             
 

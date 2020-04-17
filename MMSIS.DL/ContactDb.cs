@@ -161,25 +161,27 @@ namespace MMSIS.DL
 
         public static int GetContactTypes(string ContactType)
         {
+            int Count;
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spContactsXContactType", connection))
+            using (SqlCommand cmd = new SqlCommand("spGetNumContactsXType", connection))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                try
-                {
-                    connection.Open();
-                    int i = cmd.ExecuteNonQuery();
-                    var count = cmd.Parameters["@ret_value"].Value;
-                    return count;
-                }
-                catch (SqlException ex)
-                {
-                    throw ex;
-                }
-                finally
-                {
-                    connection.Close();
-                }
+
+                // set up the parameters
+                cmd.Parameters.Add("@Input", SqlDbType.VarChar, 50);
+                cmd.Parameters.Add("@ret_value", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                // set parameter values
+                cmd.Parameters["@Input"].Value = ContactType;
+
+                // open connection and execute stored procedure
+                connection.Open();
+                cmd.ExecuteNonQuery();
+
+                // read output value from @ret_value
+                Count = Convert.ToInt32(cmd.Parameters["@ret_value"].Value);
+                connection.Close();
+                return Count;
             }
         } //end get contacts by contact type
 
