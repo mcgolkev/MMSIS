@@ -7,6 +7,7 @@
 // ===============================
 // Change History:
 // 03/25/20 - Changed concept of client to contact all references
+// 4/24/20 - Added contact type funcationality
 //==================================
 
 
@@ -77,44 +78,7 @@ namespace MMSIS.UI
         } // end btn click
 //=============================================================================
 
-
-//================ ON FORM LOAD EVENT =======================================================
-
-        private void frmAddClient_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                //Loads contact types into the form when the form first opens
-                DataTable dataTable = ContactDb.GetAllContactTypes();
-                System.Diagnostics.Debug.WriteLine(dataTable.Columns);
-
-                //allows user input to list states that begin wtih the input
-                cboContactType.AutoCompleteSource = AutoCompleteSource.ListItems;
-                cboContactType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-
-                // fill state combo box with state names from database
-                var lst = new List<String>();
-                foreach (DataRow row in dataTable.Rows)
-                {
-                    lst.Add(row["ContactType"].ToString());
-                }
-                cboContactType.Items.Clear();
-                cboContactType.DataSource = lst;
-                //sets intial values of state combo box and state SP pararamter to "" so defalut
-                // value is null if no state is selected by the user.
-                cboContactType.Text = "";
-            }
-            catch
-            {
-                MessageBox.Show("Database Error, contact types are not available.  " +
-                    "Contact administrator");
-
-            }
-        }
-        
- //========================================================================================
-
- //============ FORM VALIDATION ===========================================================
+        //============ FORM VALIDATION ===========================================================
 
 
         private bool IsValidData()
@@ -153,7 +117,6 @@ namespace MMSIS.UI
             txtState.Text = "";
         }
 
-        //DataTable dataTable;
         private string contactFirstName;
         private string contactLastName;
         private int dbUpdateSuccessful;
@@ -177,6 +140,40 @@ namespace MMSIS.UI
         {
 
         }
+        //================ ON FORM LOAD EVENT =======================================================
+        private void frmAddContact_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                //Loads contact types into the form when the form first opens
+                DataTable dataTable = ContactDb.GetAllContactTypes();
+                System.Diagnostics.Debug.WriteLine(dataTable.Columns);
+
+                //allows user input to list states that begin wtih the input
+                cboContactType.AutoCompleteSource = AutoCompleteSource.ListItems;
+                cboContactType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+
+                // fill state combo box with state names from database
+                var lst = new List<String>();
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    lst.Add(row["ContactType"].ToString());
+                }
+                cboContactType.Items.Clear();
+                cboContactType.DataSource = lst;
+                //sets intial values of state combo box and state SP pararamter to "" so defalut
+                // value is null if no state is selected by the user.
+                cboContactType.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Database Error, contact types are not available.  " +
+                    "Contact administrator");
+
+            }
+        }
+        //===============================END FORM LOAD EVENT=========================================================
+
     }
 }
 

@@ -315,9 +315,6 @@ namespace MMSIS.DL
                 }
             }
         }
-       
-        int contactTypeExists;
-
     }
 
 } //end class

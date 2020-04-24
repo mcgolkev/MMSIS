@@ -19,20 +19,6 @@ namespace MMSIS.UI
             InitializeComponent();
         }
 
-        private string vesselHIN;
-        private int vesselLOAFt;
-        private int vesselLOAIn;
-        private int vesselBeamFt;
-        private int vesselBeamIn;
-        private int vesselDraftFt;
-        private int vesselDraftIn;
-        private int vesselDisplacement;
-        private string vesselEngineMake;
-        private string vesselEngineModel;
-        private int vesselEngineHP;
-        private int vesselNumOfEngines;
-        private string vesselEngineFuel;
-        private string vesselEngineType;
 
         private int dbUpdateSuccessful = 0;
 
@@ -50,9 +36,7 @@ namespace MMSIS.UI
                     vesselBeamIn = Convert.ToInt32(txtVesselBeamIn.Text);
                     vesselDraftFt = Convert.ToInt32(txtVesselDraftFt.Text);
                     vesselDraftIn = Convert.ToInt32(txtVesselDraftIn.Text);
-                    vesselDisplacement = Convert.ToInt32(txtVesselDisplacement.Text);
                     vesselEngineMake = (txtVesselEngineMake.Text);
-                    vesselEngineModel = (txtVesselEngineModel.Text);
                     vesselEngineHP = Convert.ToInt32(txtVesselEngineHP.Text);
                     vesselNumOfEngines = Convert.ToInt32(txtVesselNumOfEngines.Text);
                     vesselEngineFuel = (txtVesselEngineFuel.Text);
@@ -60,7 +44,7 @@ namespace MMSIS.UI
 
                     //Instanciate Vessel Object
                     Vessel vessel = new Vessel(vesselHIN, vesselLOAFt, vesselLOAIn, vesselBeamFt, vesselBeamIn, vesselDraftFt,
-                        vesselDraftIn, vesselDisplacement, vesselEngineMake, vesselEngineModel, vesselEngineHP, vesselNumOfEngines,
+                        vesselDraftIn,  vesselEngineMake, vesselEngineHP, vesselNumOfEngines,
                         vesselEngineFuel, vesselEngineType);
 
                     //Invoke AddVesel Db stored procedure and pass in Vessel object
@@ -83,34 +67,51 @@ namespace MMSIS.UI
             // does not check to make sure all data fields have been input
 
             return Validator.IsPresent(txtVesselHIN, "Vessel HIN") &&
+                Validator.IsPresent(txtVesselEngineFuel, "Vessel Fuel Type") &&
+                Validator.IsPresent(txtVesselEngineType, "Vessel HIN") &&
+               Validator.IsPresent(txtVesselEngineMake, "Vessel HIN") &&
                 Validator.IsDecimal(txtVesselLOAFt, "LOA Ft.") &&
                 Validator.IsDecimal(txtVesselLOAIn, "LOA In.") &&
                 Validator.IsDecimal(txtVesselBeamFt, "Beam Ft.") &&
                 Validator.IsDecimal(txtVesselBeamIn, "Beam In.") &&
                 Validator.IsDecimal(txtVesselDraftFt, "Draft Ft.") &&
                 Validator.IsDecimal(txtVesselDraftIn, "Draft In.") &&
-                Validator.IsDecimal(txtVesselDisplacement, "Displacement") &&
                 Validator.IsDecimal(txtVesselNumOfEngines, "Number of Engines") &&
                 Validator.IsDecimal(txtVesselEngineHP, "Engine HP");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void label10_Click(object sender, EventArgs e)
         {
 
         }
+        private void ClearAllFields()
+        {
+            txtVesselBeamFt.Text = "";
+            txtVesselBeamIn.Text = "";
+            txtVesselDraftFt.Text = "";
+            txtVesselDraftIn.Text = "";
+            txtVesselEngineFuel.Text = "";
+            txtVesselEngineHP.Text = "";
+            txtVesselEngineMake.Text = "";
+            txtVesselEngineType.Text = "";
+            txtVesselHIN.Text = "";
+            txtVesselLOAFt.Text = "";
+            txtVesselLOAIn.Text = "";
+            txtVesselNumOfEngines.Text = "";
+        }
+
+        private string vesselHIN;
+        private int vesselLOAFt;
+        private int vesselLOAIn;
+        private int vesselBeamFt;
+        private int vesselBeamIn;
+        private int vesselDraftFt;
+        private int vesselDraftIn;
+        private string vesselEngineMake;
+        private int vesselEngineHP;
+        private int vesselNumOfEngines;
+        private string vesselEngineFuel;
+        private string vesselEngineType;
+
 
     }
 }

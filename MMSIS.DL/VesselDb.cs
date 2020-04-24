@@ -23,9 +23,7 @@ namespace MMSIS.DL
                 cmd.Parameters.Add("@vesselBeamIn", SqlDbType.Int).Value = vessel.VesselBeamIn;
                 cmd.Parameters.Add("@vesselDraftFt", SqlDbType.Int).Value = vessel.VesselDraftFt;
                 cmd.Parameters.Add("@vesselDraftIn", SqlDbType.Int).Value = vessel.VesselDraftIn;
-                cmd.Parameters.Add("@vesselDisplacement", SqlDbType.Int).Value = vessel.VesselDisplacement;
                 cmd.Parameters.Add("@vesselEngineMake", SqlDbType.VarChar).Value = vessel.VesselEngineMake;
-                cmd.Parameters.Add("@vesselEngineModel", SqlDbType.VarChar).Value = vessel.VesselEngineModel;
                 cmd.Parameters.Add("@vesselEngineHP", SqlDbType.Int).Value = vessel.VesselEngineHP;
                 cmd.Parameters.Add("@vesselNumOfEngines", SqlDbType.Int).Value = vessel.VesselNumOfEngines;
                 cmd.Parameters.Add("@vesselEngineFuel", SqlDbType.VarChar).Value = vessel.VesselEngineFuel;

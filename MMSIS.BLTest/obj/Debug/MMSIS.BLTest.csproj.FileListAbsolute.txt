@@ -56,3 +56,11 @@ D:\C#\Source\Repros\202004171\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CoreCom
 D:\C#\Source\Repros\202004171\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CopyComplete
 D:\C#\Source\Repros\202004171\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
 D:\C#\Source\Repros\202004171\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.dll
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\bin\Debug\MMSIS.BLTest.pdb
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csprojAssemblyReference.cache
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CoreCompileInputs.cache
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.csproj.CopyComplete
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.dll
+D:\C#\Source\Repros\20200424\MMSIS.BLTest\obj\Debug\MMSIS.BLTest.pdb

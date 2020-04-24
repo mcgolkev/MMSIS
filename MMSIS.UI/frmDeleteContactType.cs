@@ -103,8 +103,5 @@ namespace MMSIS.UI
         
         int dbDeleteSuccessful;
         int CkContactTypeExits;
-        string SelctedContactType;
-        string contactType;
-
     }
 }

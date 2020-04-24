@@ -20,9 +20,7 @@ namespace MMSIS.BL
         private int vesselBeamIn;
         private int vesselDraftFt;
         private int vesselDraftIn;
-        private int vesselDisplacement;
         private string vesselEngineMake;
-        private string vesselEngineModel;
         private int vesselEngineHP;
         private int vesselNumOfEngines;
         private string vesselEngineFuel;
@@ -30,29 +28,26 @@ namespace MMSIS.BL
 
         public Vessel()
         {
-        //construtor
+            //construtor
         }
 
-    public Vessel(string vesselHIN, int vesselLOAFt, int vesselLOAIn, int vesselBeamFt, int vesselBeamIn,
-        int vesselDraftFt, int vesselDraftIn, int vesselDisplacement, string vesselEngineMake, string vesselEngineModel,
-        int vesselEngineHP, int vesselNumOfEngines, string vesselEngineFuel, string vesselEngineType)
+        public Vessel(string VesselHIN, int VesselLOAFt, int VesselLOAIn, int VesselBeamFt, int VesselBeamIn,
+            int VesselDraftFt, int VesselDraftIn, string VesselEngineMake, int VesselEngineHP, 
+            int VesselNumOfEngines, string VesselEngineFuel, string VesselEngineType)
         {
-            this.vesselHIN = vesselHIN;
-            this.vesselLOAFt = vesselLOAFt;
-            this.vesselLOAIn = vesselLOAIn;
-            this.vesselBeamFt = vesselBeamFt;
-            this.vesselBeamIn = vesselBeamIn;
-            this.vesselDraftFt = vesselDraftFt;
-            this.vesselDraftIn = vesselDraftIn;
-            this.vesselDisplacement = vesselDisplacement;
-            this.vesselEngineMake = vesselEngineMake;
-            this.vesselEngineModel = vesselEngineModel;
-            this.vesselEngineHP = vesselEngineHP;
-            this.vesselNumOfEngines = vesselNumOfEngines;
-            this.vesselEngineFuel = vesselEngineFuel;
-            this.vesselEngineType = vesselEngineType;
+                vesselHIN = VesselHIN;
+                vesselLOAFt = VesselLOAFt;
+                vesselLOAIn = VesselLOAIn;
+                vesselBeamFt = VesselBeamFt;
+                vesselBeamIn = VesselBeamIn;
+                vesselDraftFt = VesselDraftFt;
+                vesselDraftIn = VesselDraftIn;
+                vesselEngineMake = VesselEngineMake;
+                vesselEngineHP = VesselEngineHP;
+                vesselNumOfEngines = VesselNumOfEngines;
+                vesselEngineFuel = VesselEngineFuel;
+                vesselEngineType = VesselEngineType;
         }
-
         public string VesselHIN
         {
             get
@@ -64,6 +59,7 @@ namespace MMSIS.BL
                 vesselHIN = value;
             }
         }
+
         public int VesselLOAft
         {
             get
@@ -130,17 +126,6 @@ namespace MMSIS.BL
                 vesselDraftIn = value;
             }
         }
-        public int VesselDisplacement
-        {
-            get
-            {
-                return vesselDisplacement;
-            }
-            set
-            {
-                vesselDisplacement = value;
-            }
-        }
         public string VesselEngineMake
         {
             get
@@ -150,17 +135,6 @@ namespace MMSIS.BL
             set
             {
                 vesselEngineMake = value;
-            }
-        }
-        public string VesselEngineModel
-        {
-            get
-            {
-                return vesselEngineModel;
-            }
-            set
-            {
-                vesselEngineModel = value;
             }
         }
         public int VesselEngineHP
@@ -174,7 +148,6 @@ namespace MMSIS.BL
                 vesselEngineHP = value;
             }
         }
-
         public int VesselNumOfEngines
         {
             get
@@ -186,7 +159,6 @@ namespace MMSIS.BL
                 vesselNumOfEngines = value;
             }
         }
-
         public string VesselEngineFuel
         {
             get
@@ -209,11 +181,5 @@ namespace MMSIS.BL
                 vesselEngineType = value;
             }
         }
-
-
-
-
-
     } // end class
 }
-    
