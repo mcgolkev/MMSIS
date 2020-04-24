@@ -45,9 +45,22 @@ namespace MMSIS.UI
 
         private void findToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form newForm = new frmAddVessel();
+            //
+        }
+
+        private void powerboatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form newForm = new frmAddPowerVessel();
             newForm.MdiParent = this;
             newForm.Show();
+        }
+
+        private void sailboatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form newForm = new frmAddSailVessel();
+            newForm.MdiParent = this;
+            newForm.Show();
+
         }
     }
 }

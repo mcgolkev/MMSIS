@@ -1,6 +1,6 @@
 ﻿namespace MMSIS.UI
 {
-    partial class frmAddVessel
+    partial class frmAddPowerVessel
     {
         /// <summary>
         /// Required designer variable.

@@ -37,6 +37,8 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.powerboatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sailboatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,15 +91,18 @@
             // 
             // findToolStripMenuItem1
             // 
+            this.findToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.powerboatToolStripMenuItem,
+            this.sailboatToolStripMenuItem});
             this.findToolStripMenuItem1.Name = "findToolStripMenuItem1";
-            this.findToolStripMenuItem1.Size = new System.Drawing.Size(148, 34);
+            this.findToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.findToolStripMenuItem1.Text = "Add";
             this.findToolStripMenuItem1.Click += new System.EventHandler(this.findToolStripMenuItem1_Click);
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(148, 34);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.addToolStripMenuItem.Text = "Find";
             // 
             // adminToolStripMenuItem
@@ -113,6 +118,20 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
+            // 
+            // powerboatToolStripMenuItem
+            // 
+            this.powerboatToolStripMenuItem.Name = "powerboatToolStripMenuItem";
+            this.powerboatToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.powerboatToolStripMenuItem.Text = "Powerboat";
+            this.powerboatToolStripMenuItem.Click += new System.EventHandler(this.powerboatToolStripMenuItem_Click);
+            // 
+            // sailboatToolStripMenuItem
+            // 
+            this.sailboatToolStripMenuItem.Name = "sailboatToolStripMenuItem";
+            this.sailboatToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.sailboatToolStripMenuItem.Text = "Sailboat";
+            this.sailboatToolStripMenuItem.Click += new System.EventHandler(this.sailboatToolStripMenuItem_Click);
             // 
             // frmMainMenu
             // 
@@ -144,5 +163,7 @@
         private System.Windows.Forms.ToolStripMenuItem vesselToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem powerboatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sailboatToolStripMenuItem;
     }
 }

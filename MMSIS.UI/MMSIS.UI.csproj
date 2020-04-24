@@ -59,6 +59,12 @@
     <Compile Include="frmAddContactType.Designer.cs">
       <DependentUpon>frmAddContactType.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddSailVessel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSailVessel.Designer.cs">
+      <DependentUpon>frmAddSailVessel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +83,11 @@
     <Compile Include="frmAddContact.Designer.cs">
       <DependentUpon>frmAddContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddVessel.cs">
+    <Compile Include="frmAddPowerVessel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddVessel.Designer.cs">
-      <DependentUpon>frmAddVessel.cs</DependentUpon>
+    <Compile Include="frmAddPowerVessel.Designer.cs">
+      <DependentUpon>frmAddPowerVessel.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDeleteContactType.cs">
       <SubType>Form</SubType>
@@ -111,6 +117,9 @@
     <EmbeddedResource Include="frmAddContactType.resx">
       <DependentUpon>frmAddContactType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSailVessel.resx">
+      <DependentUpon>frmAddSailVessel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,8 +129,8 @@
     <EmbeddedResource Include="frmAddContact.resx">
       <DependentUpon>frmAddContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddVessel.resx">
-      <DependentUpon>frmAddVessel.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddPowerVessel.resx">
+      <DependentUpon>frmAddPowerVessel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteContactType.resx">
       <DependentUpon>frmDeleteContactType.cs</DependentUpon>

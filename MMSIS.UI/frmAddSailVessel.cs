@@ -5,24 +5,23 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using MMSIS.UL;
 using MMSIS.DL;
 using MMSIS.BL;
 
+
 namespace MMSIS.UI
 {
-    public partial class frmAddVessel : Form
+    public partial class frmAddSailVessel : Form
     {
-        public frmAddVessel()
+        public frmAddSailVessel()
         {
             InitializeComponent();
         }
-
-
         private int dbUpdateSuccessful = 0;
-
-        public  void btnSubmit_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             try
             {
@@ -31,8 +30,8 @@ namespace MMSIS.UI
                     //If the data is valid, then initialize fields to string or int and instanciate Vessel object
                     vesselHIN = (txtVesselHIN.Text);
                     vesselLOAFt = Convert.ToInt32(txtVesselLOAFt.Text);
-                    vesselLOAIn = Convert.ToInt32 (txtVesselLOAIn.Text );
-                    vesselBeamFt = Convert.ToInt32(txtVesselBeamFt.Text );
+                    vesselLOAIn = Convert.ToInt32(txtVesselLOAIn.Text);
+                    vesselBeamFt = Convert.ToInt32(txtVesselBeamFt.Text);
                     vesselBeamIn = Convert.ToInt32(txtVesselBeamIn.Text);
                     vesselDraftFt = Convert.ToInt32(txtVesselDraftFt.Text);
                     vesselDraftIn = Convert.ToInt32(txtVesselDraftIn.Text);
@@ -44,7 +43,7 @@ namespace MMSIS.UI
 
                     //Instanciate Vessel Object
                     Vessel vessel = new Vessel(vesselHIN, vesselLOAFt, vesselLOAIn, vesselBeamFt, vesselBeamIn, vesselDraftFt,
-                        vesselDraftIn,  vesselEngineMake, vesselEngineHP, vesselNumOfEngines,
+                        vesselDraftIn, vesselEngineMake, vesselEngineHP, vesselNumOfEngines,
                         vesselEngineFuel, vesselEngineType);
 
                     //Invoke AddVesel Db stored procedure and pass in Vessel object
@@ -70,10 +69,8 @@ namespace MMSIS.UI
                     ex.GetType().ToString() + "/n" +
                     ex.StackTrace, "Exception");
             }
-
-        } // end btn click
-
-        private  bool  IsValidData()
+        }
+        private bool IsValidData()
         {
             // check to see if int input fields are int and that HIN has been input
             // does not check to make sure all data fields have been input
@@ -91,10 +88,7 @@ namespace MMSIS.UI
                 Validator.IsDecimal(txtVesselNumOfEngines, "Number of Engines") &&
                 Validator.IsDecimal(txtVesselEngineHP, "Engine HP");
         }
-        private void label10_Click(object sender, EventArgs e)
-        {
 
-        }
         private void ClearAllFields()
         {
             txtVesselBeamFt.Text = "";
@@ -123,7 +117,6 @@ namespace MMSIS.UI
         private int vesselNumOfEngines;
         private string vesselEngineFuel;
         private string vesselEngineType;
-
-
     }
 }
+
