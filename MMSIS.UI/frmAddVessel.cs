@@ -50,6 +50,18 @@ namespace MMSIS.UI
                     //Invoke AddVesel Db stored procedure and pass in Vessel object
                     dbUpdateSuccessful = VesselDb.AddVessel(vessel);
 
+                    if (dbUpdateSuccessful == 0)
+                    {
+                        ClearAllFields();
+                        MessageBox.Show("Database exception, contact administrator.");
+                    }
+                    else
+                    {
+                        ClearAllFields();
+                        MessageBox.Show("Vessel Added.");
+                    }
+
+
                 }
             }
             catch (Exception ex)
