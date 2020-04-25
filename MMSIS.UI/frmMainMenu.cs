@@ -62,5 +62,12 @@ namespace MMSIS.UI
             newForm.Show();
 
         }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form newForm = new frmFindContact();
+            newForm.MdiParent = this;
+            newForm.Show();
+        }
     }
 }

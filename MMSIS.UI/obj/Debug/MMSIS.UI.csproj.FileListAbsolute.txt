@@ -244,7 +244,6 @@ D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.csprojAssemblyReference
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.ContactAddType.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddContactType.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmAdmin.resources
-D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmContactDetail.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddContact.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmDeleteContactType.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmMainMenu.resources
@@ -256,3 +255,4 @@ D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.exe
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.pdb
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddPowerVessel.resources
 D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmAddSailVessel.resources
+D:\C#\Source\Repros\20200424\MMSIS.UI\obj\Debug\MMSIS.UI.frmFindContact.resources

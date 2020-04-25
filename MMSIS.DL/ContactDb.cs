@@ -62,7 +62,7 @@ namespace MMSIS.DL
         public static DataTable GetContactXLastName(string searchArg)
         {
             SqlConnection connection = DbConnection.GetConnection();
-            using (SqlCommand cmd = new SqlCommand("spSelectContactNameXLastName", connection))
+            using (SqlCommand cmd = new SqlCommand("spSelectContactXLastName", connection))
             {
                 DataTable dataTable = new DataTable();
 
